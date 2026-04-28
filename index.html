@@ -3,92 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>大老爺娛樂城</title>
+<title>我的IG頁</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Arial", sans-serif;
-}
-
 body {
-  color: white;
-  text-align: center;
-  background: linear-gradient(135deg, #000000, #1a1a1a, #333333);
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(45deg,#fdf6f9,#ffe0f0,#fff);
+    display: flex;
+    justify-content: center;
 }
 
-/* 動態背景 */
-body::before {
-  content: "";
-  position: fixed;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,215,0,0.15) 0%, transparent 70%);
-  animation: moveBg 10s linear infinite;
+/* 主容器 /
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
 }
 
-@keyframes moveBg {
-  0% { transform: translate(0,0); }
-  50% { transform: translate(-25%, -25%); }
-  100% { transform: translate(0,0); }
+/ 頭像 /
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
 }
 
-/* 主區塊 */
-.hero {
-  padding: 100px 20px;
+/ 名字 /
+h1 {
+    margin: 10px 0 5px;
 }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 15px;
+/ 簡介 /
+.bio {
+    color: #666;
+    margin-bottom: 20px;
 }
 
-.hero p {
-  color: #ccc;
-  margin-bottom: 30px;
+/ 按鈕 /
+.link {
+    display: block;
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
 }
 
-.btn {
-  background: gold;
-  color: black;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: orange;
-  transform: scale(1.05);
-}
-
-/* 卡片區 */
-.section {
-  padding: 60px 20px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  background: rgba(255,255,255,0.08);
-  padding: 25px;
-  border-radius: 15px;
-  width: 220px;
-  backdrop-filter: blur(10px);
-}
-
-/* footer */
-footer {
-  padding: 20px;
-  color: #888;
+/ 按下效果 */
+.link:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg,#ff5f9e,#ff8fab);
+    color: white;
 }
 </style>
 
@@ -96,53 +67,19 @@ footer {
 
 <body>
 
-<!-- 主畫面 -->
-<div class="hero">
-  <h1>大老爺娛樂城</h1>
-  <p>頂級玩家專屬娛樂殿堂</p>
-  <a href="#" class="btn">立即加入 VIP</a>
-</div>
+<div class="container">
 
-<!-- 優惠 -->
-<div class="section">
-  <h2>尊榮禮遇</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>迎新禮包</h3>
-      <p>首次儲值最高 100% 加碼</p>
-    </div>
-    <div class="card">
-      <h3>穩定回饋</h3>
-      <p>每日返水長期回饋</p>
-    </div>
-    <div class="card">
-      <h3>VIP服務</h3>
-      <p>專屬客服與快速出金</p>
-    </div>
-  </div>
-</div>
+<img src="https://i.imgur.com/6VBx3io.png" class="avatar">
 
-<!-- 遊戲 -->
-<div class="section">
-  <h2>精選娛樂</h2>
-  <div class="cards">
-    <div class="card">🎰 老虎機</div>
-    <div class="card">🃏 真人百家樂</div>
-    <div class="card">⚽ 體育投注</div>
-  </div>
-  <br>
-  <a href="#" class="btn">開始遊戲</a>
-</div>
+<h1>你的名字</h1>
+<p class="bio">這裡放你的介紹 💖</p>
 
-<!-- 安全 -->
-<div class="section">
-  <h2>安全保障</h2>
-  <p>高規格加密｜快速出入金｜24小時客服</p>
-</div>
+<a href="https://instagram.com" class="link">📸 我的IG</a>
+<a href="https://youtube.com" class="link">🎬 我的YouTube</a>
+<a href="https://google.com" class="link">🌐 官方網站</a>
+<a href="https://line.me" class="link">💬 加我LINE</a>
 
-<footer>
-  © 2026 大老爺娛樂城 | All Rights Reserved
-</footer>
+</div>
 
 </body>
 </html>
