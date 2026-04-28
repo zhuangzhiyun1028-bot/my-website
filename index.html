@@ -12,13 +12,30 @@ body {
     color: white;
     text-align: center;
 
-    /* 🎯 娛樂城背景（非黑） */
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    /* 💗 粉色漸層背景 */
+    background: linear-gradient(135deg, #ff4e8a, #ff6ec7, #ffc1e3);
+}
+
+/* 半透明遮罩（更像娛樂城） */
+body::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+    animation: moveBg 10s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveBg {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(-20%, -20%); }
+    100% { transform: translate(0,0); }
 }
 
 /* 容器 */
 .container {
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 /* 標題 */
@@ -29,28 +46,34 @@ h1 {
 
 /* 副標 */
 .subtitle {
-    color: #ccc;
+    color: #ffe6f0;
     margin-bottom: 30px;
 }
 
 /* 按鈕 */
 .btn {
-    display: inline-block;
-    background: gold;
-    color: black;
-    padding: 15px 25px;
+    display: block;
+    background: white;
+    color: #ff2e75;
+    padding: 15px;
+    margin: 12px auto;
+    width: 80%;
+    max-width: 300px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* 卡片 */
 .card {
-    background: rgba(255,255,255,0.1);
-    margin: 15px;
+    background: rgba(255,255,255,0.15);
+    margin: 15px auto;
     padding: 20px;
+    width: 85%;
+    max-width: 320px;
     border-radius: 15px;
+    backdrop-filter: blur(5px);
 }
 </style>
 
@@ -63,17 +86,15 @@ h1 {
 <h1>大老爺娛樂城</h1>
 <p class="subtitle">頂級玩家專屬娛樂平台</p>
 
-<a href="https://google.com" class="btn">立即加入</a>
+<a href="https://google.com" class="btn">💗 立即加入</a>
 
 <div class="card">🎁 新會員｜首儲最高100%</div>
 <div class="card">💰 回饋｜每日返水優惠</div>
 <div class="card">⚡ 快速出金｜安全穩定</div>
 
-<br>
-
-<a href="https://google.com" class="btn">開始遊戲</a>
-<a href="https://line.me" class="btn">加入LINE</a>
-<a href="https://instagram.com" class="btn">官方IG</a>
+<a href="https://google.com" class="btn">🎮 開始遊戲</a>
+<a href="https://line.me" class="btn">💬 加入LINE</a>
+<a href="https://instagram.com" class="btn">📸 官方IG</a>
 
 </div>
 
