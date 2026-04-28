@@ -6,75 +6,91 @@
 <title>大老爺娛樂城</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-    /* 💗 漸變粉紅（比較亮） */
-    background: linear-gradient(
-        135deg,
-        #ff9ac4 0%,
-        #ff6ec7 40%,
-        #ff4e8a 70%,
-        #ff2e75 100%
-    );
+body {
+  color: white;
+  text-align: center;
+
+  /* 💗 漸變粉紅背景 */
+  background: linear-gradient(
+    135deg,
+    #ff9ac4 0%,
+    #ff6ec7 40%,
+    #ff4e8a 70%,
+    #ff2e75 100%
+  );
 }
 
 /* ✨ 流動光效果 */
 body::before {
-    content: "";
-    position: fixed;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 70%);
-    animation: moveBg 8s linear infinite;
-    z-index: -1;
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 70%);
+  animation: moveBg 8s linear infinite;
+  z-index: -1;
 }
 
 @keyframes moveBg {
-    0% { transform: translate(0,0); }
-    50% { transform: translate(-15%, -15%); }
-    100% { transform: translate(0,0); }
+  0% { transform: translate(0,0); }
+  50% { transform: translate(-15%, -15%); }
+  100% { transform: translate(0,0); }
 }
 
+/* 容器 */
 .container {
-    padding: 50px 20px;
+  padding: 50px 20px;
 }
 
+/* 標題 */
 h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
+/* 副標 */
 .subtitle {
-    color: #fff0f5;
-    margin-bottom: 30px;
+  color: #fff0f5;
+  margin-bottom: 30px;
 }
 
+/* 按鈕 */
 .btn {
-    display: block;
-    background: white;
-    color: #ff2e75;
-    padding: 15px;
-    margin: 12px auto;
-    width: 80%;
-    max-width: 300px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: block;
+  background: white;
+  color: #ff2e75;
+  padding: 15px;
+  margin: 12px auto;
+  width: 80%;
+  max-width: 300px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: 0.2s;
 }
 
+/* 按鈕效果 */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* 卡片 */
 .card {
-    background: rgba(255,255,255,0.2);
-    margin: 15px auto;
-    padding: 20px;
-    width: 85%;
-    max-width: 320px;
-    border-radius: 15px;
-    backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.2);
+  margin: 15px auto;
+  padding: 20px;
+  width: 85%;
+  max-width: 320px;
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
 }
 </style>
 
@@ -84,19 +100,25 @@ h1 {
 
 <div class="container">
 
-<h1>大老爺娛樂城</h1>
+<h1>🎰 大老爺娛樂城</h1>
 <p class="subtitle">頂級玩家專屬娛樂平台</p>
 
-<!-- 主連結 -->
-<a href="https://www.gm1688.net/" class="btn">💗 立即加入</a>
+<!-- 💗 立即加入（已設定） -->
+<a href="https://www.gm1688.net/" target="_blank" class="btn">💗 立即加入</a>
 
+<!-- 優惠 -->
 <div class="card">🎁 新會員｜首儲最高100%</div>
 <div class="card">💰 回饋｜每日返水優惠</div>
 <div class="card">⚡ 快速出金｜安全穩定</div>
 
-<a href="https://www.gm1688.net/" class="btn">🎮 開始遊戲</a>
-<a href="https://line.me/ti/g/nyDNG74XXU" class="btn">💬 官方LINE</a>
-<a href="https://www.instagram.com/fafababy_01?igsh=ZXp2eDYzNmUzcTBj" class="btn">📸 官方IG</a>
+<!-- 🎮 開始遊戲 -->
+<a href="https://www.gm1688.net/" target="_blank" class="btn">🎮 開始遊戲</a>
+
+<!-- 💬 LINE -->
+<a href="https://line.me/ti/g/nyDNG74XXU" target="_blank" class="btn">💬 官方LINE</a>
+
+<!-- 📸 IG -->
+<a href="https://www.instagram.com/fafababy_01?igsh=ZXp2eDYzNmUzcTBj" target="_blank" class="btn">📸 官方IG</a>
 
 </div>
 
